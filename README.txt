@@ -1,3 +1,4 @@
-<Tested in the virtualBox image>
+<Tested in virtualBox ubuntu image>
 
-Run the ass2.sh file in the same directory as this README.txt
+
+Edit and run the wikiSpeaker.sh file in the same directory as this README.txt, locating the path to a compatible version of Java.
