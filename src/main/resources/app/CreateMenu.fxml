@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreateMenuController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="500.0">
+         <children>
+            <Text fx:id="headerText" layoutX="16.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a term to search on Wikipedia:" textAlignment="CENTER" wrappingWidth="468.3726043701172">
+               <font>
+                  <Font name="Corbel" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="mainMenuButton" layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleMainMenuButton" text="&lt; Main menu" />
+            <TextArea fx:id="searchTextArea" layoutX="48.0" layoutY="159.0" onKeyTyped="#handleSearchAreaText" prefHeight="30.0" prefWidth="358.0" promptText="Enter a term..." wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font></TextArea>
+            <TextArea fx:id="bottomTextArea" editable="false" layoutX="30.0" layoutY="222.0" prefHeight="160.0" prefWidth="440.0" visible="false">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextArea>
+            <Button fx:id="overwriteButton" disable="true" layoutX="416.0" layoutY="171.0" mnemonicParsing="false" onAction="#handleOverwriteButton" text="Overwrite!" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
